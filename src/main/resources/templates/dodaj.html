@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <title>Dodaj</title>
+</head>
+<body>
+<center>
+    <form th:action="@{/dodaj}" method="post">
+        Nazwa <input type="text" th:name="name"></input><br/>
+        Tagline <input type="text" th:name="tagline" ></input><br/>
+        firstBrewed <input type="text" th:name="firstBrewed" ></input><br/>
+        description <input type="text" th:name="desc"></input><br/>
+        imageUrl <input type="text" th:name="imageUrl" placeholder="imageUrl"></input><br/>
+        ibu <input type="number" th:name="ibu" placeholder="ibu"></input><br/>
+        foodPairing1 <input type="text" th:name="foodPairing1" ></input><br/>
+        foodPairing2 <input type="text" th:name="foodPairing2" ></input><br/>
+        foodPairing3 <input type="text" th:name="foodPairing3" ></input><br/>
+        <button type="submit">Dodaj mnie browar</button>
+    </form><br/>
+    <div>Witamy na PunkApi. Tu możesz dodać browar</div>
+    <div>lub pod adresem http://localhost:8080/list pobrać listę piw</div>
+    <div>lub pod adresem http://localhost:8080/foodpairings/search/{phrase} wyszukać piwo po food pairings</div>
+</center>
+</body>
+</html>
